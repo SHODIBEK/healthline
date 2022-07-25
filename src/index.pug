@@ -1,0 +1,337 @@
+extends pug/base
+
+append vars
+	- title = 'Главная страница'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+block content
+	.wrapper
+		include pug/pages/header
+		section.content
+			.tab-block
+				.container
+					.tab-block__wrapper
+						#one.tab.activ
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для Инфузионной терапии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#two.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для общей терапии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#three.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для Анестезиологии и интенсивной терап
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#four.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для Акушерства и гинекологии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#five.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для Урологии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#sex.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для хирургии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+						#seven.tab
+							.tab-block__top
+								.tab-block__title
+									h1
+										| для Гастроэнтерологии
+								.tab-block__link
+									a(href="javascript:void(0);").enter-btn
+										+svg("enter")
+										span
+											| Перейти в каталог продукции
+							ul
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Шприцы инъекционные стерильные однократного применения c иглами
+								li
+									a(href="javascript:void(0);")
+										.tab-block__list
+											.tab-block__img(style="background-image: url(images/content/1.jpg)")
+											.tab-block__desc
+												| Пример оформления в одну строку
+			.content-info
+				.container
+					.content-info__title
+						h1
+							| Продукция
+						h3
+							| от Health Line - это:
+					.content-info__blocks
+						.content-info__block
+							.quality(style="background-image: url('images/css_sprites.png')")
+							.content-info__block__title
+								| Качество
+							.content-info__block__subtitle
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно
+						.content-info__block
+							.care(style="background-image: url('images/css_sprites.png')")
+							.content-info__block__title
+								| ЗАБОТА
+							.content-info__block__subtitle
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно
+						.content-info__block
+							.trust(style="background-image: url('images/css_sprites.png')")
+							.content-info__block__title
+								| Доверие
+							.content-info__block__subtitle
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно
+			.index-reviews
+				.container
+					.index-reviews__wrapper
+						.index-reviews__top
+							.index-reviews__title
+								h1
+									| Отзывы
+								h3
+									| о нашей продукции
+							.index-reviews__link
+								a(href="javascript:void(0);").enter-btn
+									+svg("enter")
+									span
+										| Перейти ко всем отзывам
+						.index-reviews__blocks.owl-carousel
+							.reviews
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__title
+									| Название компании
+								.reviews__subtitle
+									p
+										| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре,
+								.reviews_btn
+									a(href="javascript:void(0);").btn
+										| Прочитать
+							.reviews
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__title
+									| Название компании
+								.reviews__subtitle
+									p
+										| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете к себе единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+								.reviews_btn
+									a(href="javascript:void(0);").btn
+										| Прочитать
+							.reviews
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__title
+									| Название компании. Пример оформления в две и более строк
+								.reviews__subtitle
+									p
+										| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы
+								.reviews_btn
+									a(href="javascript:void(0);").btn
+										| Прочитать
+		include pug/pages/footer

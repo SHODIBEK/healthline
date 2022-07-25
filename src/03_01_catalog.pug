@@ -1,0 +1,155 @@
+extends pug/base
+
+append vars
+	- title = 'Для инфузионной терапии'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Для инфузионной терапии
+					.crumbs-title
+						| Для инфузионной терапии
+				.inner-content
+					.sidebar
+						ul
+							li.active
+								a(href="javascript:void(0);")
+									| для Инфузионной терапии
+							li
+								a(href="javascript:void(0);")
+									| для Общей  терапии
+							li
+								a(href="javascript:void(0);")
+									| для Анестезиологии и интенсивной терапии
+							li
+								a(href="javascript:void(0);")
+									| для АкушерствА и гинекологии
+							li
+								a(href="javascript:void(0);")
+									| для Урологии
+							li
+								a(href="javascript:void(0);")
+									| для Хирургии
+							li
+								a(href="javascript:void(0);")
+									| для Гастроэнтерологии
+					.main-page
+						.catalog
+							.catalog-list
+								ul
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строку
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строку
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строку
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строку
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строку
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Шприцы инъекционные стерильные однократного применения c иглами
+									li
+										a(href="javascript:void(0);")
+											.catalog-block__list
+												.catalog-block__img(style="background-image: url(images/content/1.jpg)")
+												.catalog-block__desc
+													| Пример оформления в одну строк
+							ul.pagination
+								li
+									a(href="javascript:void(0);")
+										| Предыдущая
+								li
+									a(href="javascript:void(0);")
+										| 1
+								li.active
+									a(href="javascript:void(0);")
+										| 2
+								li
+									a(href="javascript:void(0);")
+										| 3
+								li.dots
+									a(href="javascript:void(0);")
+										| ....
+								li
+									a(href="javascript:void(0);")
+										| 10
+								li
+									a(href="javascript:void(0);")
+										| Следующая
+							.default-page
+								h3
+									| SEO блок
+								p
+									| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+								p
+									| Абзац! Распишите о разделах сайта, укажите, где и что находиться, что можно найти в фотогалерее, каталоге продукции. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал. Создайте лаконичное и интересное описание Вашей компании, полностью раскрывающее вид деятельности, достижения и плюсы.
+		include pug/pages/footer

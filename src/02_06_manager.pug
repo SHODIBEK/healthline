@@ -1,0 +1,64 @@
+extends pug/base
+
+append vars
+	- title = 'Обращение руководителя'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Обращение руководителя
+					.crumbs-title
+						| Обращение руководителя
+				.inner-content
+					.sidebar
+						ul
+							li
+								a(href="javascript:void(0);")
+									| Философия компании
+							li
+								a(href="javascript:void(0);")
+									| История компании
+							li
+								a(href="javascript:void(0);")
+									| Новости компании
+							li.active
+								a(href="javascript:void(0);")
+									| Обращение руководителя
+							li
+								a(href="javascript:void(0);")
+									| Сертификаты и награды
+							li
+								a(href="javascript:void(0);")
+									| Фотогалерея
+							li
+								a(href="javascript:void(0);")
+									| Видеоблог
+					.main-page.manager
+						a(href="images/content/manager.jpg" data-fancybox="images")
+							span.manager-img(style="background-image: url('images/content/manager.jpg')")
+						.manager-info
+							.manager-name
+								h1 Имя Фамилия
+							.manager-post
+								p
+									| Занимаемая должность
+							.manager-text
+								p
+									| “Пример оформления речи руководителя. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+								p
+									| Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.” “Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.”
+		include pug/pages/footer

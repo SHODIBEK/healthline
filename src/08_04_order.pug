@@ -1,0 +1,32 @@
+extends pug/base
+
+append vars
+	- title = 'Ваш заказ успешно принят!'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page trust-hidden'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Ваш заказ успешно принят!
+					.crumbs-title
+						| Ваш заказ успешно принят!
+				.inner-content
+					.order-success
+						span
+							| Благодарим за ооформленный заказ. Наш менеджер свяжется с Вами в ближайшее время для подтверждения заказа.
+						button(type="button").submit
+							| Вернуться на главную
+		include pug/pages/footer

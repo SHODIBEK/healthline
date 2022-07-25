@@ -1,0 +1,45 @@
+extends pug/base
+
+append vars
+	- title = 'Заказать звонок'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Заказать звонок
+					.crumbs-title
+						| Заказать звонок
+				.inner-content
+					.request
+						form(action="#" method="#")
+							.request-form
+								.form-group
+									input(type="text" name="name" id="name" autocomplete="off")
+									label(for="name")
+										| Представьтесь пожалуйста:
+								.form-group
+									input(type="tel" name="tel" id="tel")
+									label(for="tel")
+										| Телефон:
+								.form-group
+									textarea(name="text" id="text")
+									label(for="text")
+										| Напишите пожалуйста чем мы можем вам помочь:
+							.request-btn
+								button(type="submit").submit
+									| Отправить
+		include pug/pages/footer

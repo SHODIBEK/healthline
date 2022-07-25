@@ -1,0 +1,63 @@
+extends pug/base
+
+append vars
+	- title = 'Нам доверяют'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page trust-hidden'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Нам доверяют
+					.crumbs-title
+						| Нам доверяют
+				.inner-content
+					.trust
+						.trust-title
+							p
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+						.trust-items
+							ul
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+								li
+									img(src="images/content/999.jpg")
+		include pug/pages/footer

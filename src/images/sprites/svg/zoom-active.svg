@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Active" width="26" height="26" viewBox="0 0 26 26">
+	<defs>
+		<style>
+			.cls-1{fill:#009846}.cls-2{fill:#fff;fill-rule:evenodd}
+		</style>
+	</defs>
+	<path id="Rounded_Rectangle_13" d="M0 0h26v26H0z" class="cls-1" data-name="Rounded Rectangle 13"/>
+	<path id="Forma_1" d="M798.633 560.963l-2.2-2.192a1.024 1.024 0 0 0-.771-.294l-1.057-1.057a6.075 6.075 0 1 0-1.191 1.191l1.057 1.057a1.024 1.024 0 0 0 .294.771l2.192 2.193a1.01 1.01 0 0 0 1.425 0l.243-.243a1.007 1.007 0 0 0 .008-1.426zm-5.889-4.217a4.215 4.215 0 1 1 0-5.965 4.22 4.22 0 0 1 0 5.965z" class="cls-2" data-name="Forma 1" transform="translate(-778 -542)"/>
+</svg>

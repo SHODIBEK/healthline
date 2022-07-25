@@ -1,0 +1,96 @@
+extends pug/base
+
+append vars
+	- title = 'Пример оформления анонса.'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							a(href=`javascript:void(0);`)
+								| Видеоблог
+						li
+							| Пример оформления анонса.
+					.crumbs-title
+						| Пример оформления анонса.
+				.inner-content
+					.sidebar
+						ul
+							li
+								a(href="javascript:void(0);")
+									| Философия компании
+							li
+								a(href="javascript:void(0);")
+									| История компании
+							li
+								a(href="javascript:void(0);")
+									| Новости компании
+							li
+								a(href="javascript:void(0);")
+									| Обращение руководителя
+							li
+								a(href="javascript:void(0);")
+									| Сертификаты и награды
+							li
+								a(href="javascript:void(0);")
+									| Фотогалерея
+							li.active
+								a(href="javascript:void(0);")
+									| Видеоблог
+					.main-page.video-inner
+						.video
+							a(href="https://mover.uz/video/embed/n0bnUp1m/" data-fancybox="video" data-type="iframe")
+								img(src="images/content/video.jpg")
+							span.date
+								| 21.05.2018
+							p
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее кtачественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей.
+							.video-link
+								a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span
+										| Назад
+						.video-other
+							.video-other__text
+								h1
+									| Другое видео:
+							ul
+								li
+									a(href="javascript:void(0);")
+										.video-other__img
+											img(src="images/content/3.jpg")
+										.video-other__title
+											span
+												| Пример оформления анонса пример в две строки
+										.video-other__date
+											span.date
+												| 21.05.2018
+										.btn
+											| Смотреть
+								li
+									a(href="javascript:void(0);")
+										.video-other__img
+											img(src="images/content/4.jpg")
+										.video-other__title
+											span
+												| Пример оформления анонса
+										.video-other__date
+											span.date
+												| 21.05.2018
+										.btn
+											| Смотреть
+
+		include pug/pages/footer

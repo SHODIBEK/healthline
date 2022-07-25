@@ -1,0 +1,96 @@
+extends pug/base
+
+append vars
+	- title = 'Оформить заказ'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page trust-hidden'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Оформить заказ
+					.crumbs-title
+						| Оформить заказ
+				.inner-content
+					.order
+						.order-nav
+							ul.order-items
+								li.active
+									| Оформить заказ как:
+								li
+									| Местоположение:
+								li
+									| Личные данные:
+						form(action="#" method="#")
+							.order-wrap
+								.order-block.active(data-id="1")
+									.order-left
+										.order-group
+											input(type="radio" name="order" id="1")
+											label(for="1")
+												| Аптека
+										.order-group
+											input(type="radio" name="order" id="2")
+											label(for="2")
+												| Частная клиника
+										.order-group
+											input(type="radio" name="order" id="3")
+											label(for="3")
+												| Лечебно-профилактическое учреждение
+										.order-group
+											input(type="radio" name="order" id="4")
+											label(for="4")
+												| Лечебно-профилактическое учреждение
+										.order-group.other
+											input(type="radio" name="order" id="other")
+											label(for="other")
+												| Другое
+											.other-group
+												input(type="text" name="other"  id="type" placeholder="Укажите тип учреждения" autocomplete="off" disabled)
+									.order-right
+										.order-right__title
+											| Какое изделие Вас интересует?
+										textarea.order-right__text
+								.order-block(data-id="2")
+									.city-group.form-group
+										input(type="text" name="city" id="city")
+										label(for="city")
+											| Укажите город, название улицы
+									.city-group.form-group
+										textarea(id="orderTxt")
+										label(for="orderTxt")
+											| Укажите ориентир
+								.order-block(data-id="3")
+									.personal
+										.order-group
+											span
+												| Наименование организации:
+											input(type="text" name="company")
+										.order-group
+											span
+												| Контактное лицо:
+											input(type="text" name="contact")
+										.order-group
+											span
+												| Контакты для связи:
+											input(type="text" name="callback")
+							.order-btn
+								button(type='button')#prev.submit
+									| Назад
+								button(type='button')#next.submit
+									| Далее
+								button(type='submit')#complete.submit.out
+									| Заказать
+		include pug/pages/footer

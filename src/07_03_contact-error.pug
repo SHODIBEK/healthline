@@ -1,0 +1,114 @@
+extends pug/base
+
+append vars
+	- title = 'Контакты'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page trust-hidden'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Контакты
+					.crumbs-title
+						| Контакты
+				.inner-content
+					.contact-top
+						.contact-top__items
+							.contact-top__title
+								| Телефоны:
+							.contact-top__info
+								.contact-top__num
+									p
+										| +998 (71) 150-44-22
+									span
+										| Круглосуточная служба поддержки клиентов
+								.contact-top__num
+									p
+										| +998 (71) 150-74-39
+									span
+										| Администрация
+						.contact-top__items
+							.contact-top__title
+								| Электронные почты:
+							.contact-top__info
+								.contact-top__mail
+									p
+										| info@healthline.uz
+									span
+										| Название отдела
+								.contact-top__mail
+									p
+										| support@healthline.uz
+									span
+										| Название отдела
+						.contact-top__items
+							.contact-top__title
+								| Адрес:
+							.contact-top__info
+								p
+									| индекс, страна, город, улица, строение
+					.contact-form
+						.contact-form__title
+							| Если у Вас есть вопросы, вы можете обратиться к нам:
+						.error-txt
+							| Ошибка. Заполните все поля
+						form(action="#" method="#").form-contact
+							.form-group
+								input(type="text" name="theme" id="theme" autocomplete="off")
+								label(for="theme")
+									| Тема сообщения:
+							.form-group.error
+								input(type="text" name="name" id="name" autocomplete="off")
+								label(for="name")
+									| Представьтесь пожалуйста:
+							.form-group
+								input(type="email" name="email" id="email" autocomplete="off")
+								label(for="email")
+									| Ваш адрес электронной почты:
+							.form-group
+								textarea(name="text" id="text")
+								label(for="text")
+									| Введите свое сообщение:
+							<div class="visualCaptcha" id="simple-captcha">
+							<div class="visualCaptcha-possibilities">
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/shirt.png" alt=""></a></div>
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/headphone.png" alt=""></a></div>
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/auto.png" alt=""></a></div>
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/buggy.png" alt=""></a></div>
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/coffee.png" alt=""></a></div>
+							<div class="img"><a href="javascript:void(0);"><img src="images/icons/airplain.png" alt=""></a></div>
+							</div>
+							<div class="visualCaptcha-explanation error">Выберите&nbsp;<span class="active">«наушники»</span>, чтобы подтвердить, что&nbsp;Вы не&nbsp;робот</div>
+							</div>
+							.button-submit
+								button(type="submit").submit
+									| Отправить
+						.success(style="display:none")
+							span.check
+								| Сообщение отправлено
+							button(type="button").submit
+								| Отправить еще сообщения
+					.contact-map
+						.contact-map__title
+							| Местоположение:
+						.contact-map__wrap
+							img(src="images/content/map.jpg")
+					.contact-bottom
+						.contact-bottom__title
+							| Дополнительная информация:
+						.contact-bottom__text
+							p
+								| Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов.
+		include pug/pages/footer

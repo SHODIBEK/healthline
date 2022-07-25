@@ -1,0 +1,139 @@
+extends pug/base
+
+append vars
+	- title = 'История компании'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page trust-hidden'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Отзывы
+					.crumbs-title
+						| Отзывы
+				.inner-content
+					.inner-reviews
+						.inner-reviews__items
+							.inner-reviews__item
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__block
+									.reviews__title
+										| Название компании
+									.reviews__subtitle
+										p
+											| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете к себе единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный
+							.inner-reviews__item
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__block
+									.reviews__title
+										| Название компании
+									.reviews__subtitle
+										p
+											| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете к себе единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко
+							.inner-reviews__item
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__block
+									.reviews__title
+										| Название компании
+									.reviews__subtitle
+										p
+											| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете к себе единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+							.inner-reviews__item
+								.reviews__img
+									img(src="images/reviews/1.jpg")
+								.reviews__block
+									.reviews__title
+										| Название компании
+									.reviews__subtitle
+										p
+											| Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете к себе единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+						ul.pagination
+							li
+								a(href="javascript:void(0);")
+									| Предыдущая
+							li
+								a(href="javascript:void(0);")
+									| 1
+							li.active
+								a(href="javascript:void(0);")
+									| 2
+							li
+								a(href="javascript:void(0);")
+									| 3
+							li.dots
+								a(href="javascript:void(0);")
+									| ....
+							li
+								a(href="javascript:void(0);")
+									| 10
+							li
+								a(href="javascript:void(0);")
+									| Следующая
+						.reviews-form
+							.reviews-form__title
+								| Оставить отзыв
+							form(action="#" method="#")
+								.reviews-form__input
+									.form-group
+										input(type="text" name="name" id="name" autocomplete="off")
+										label(for="name")
+											| Представьтесь пожалуйста:
+									.form-group
+										input(type="email" name="email" id="email" autocomplete="off")
+										label(for="email")
+											| Ваш адрес электронной почты:
+									.form-group.form-textarea
+										textarea(name="text" id="text")
+										label(for="text")
+											| Введите свое сообщение:
+								.reviews-form__other
+									.reviews-form__other--left
+										<div class="visualCaptcha" id="simple-captcha">
+										<div class="visualCaptcha-possibilities">
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/shirt.png" alt=""></a></div>
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/headphone.png" alt=""></a></div>
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/auto.png" alt=""></a></div>
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/buggy.png" alt=""></a></div>
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/coffee.png" alt=""></a></div>
+										<div class="img"><a href="javascript:void(0);"><img src="images/icons/airplain.png" alt=""></a></div>
+										</div>
+										<div class="visualCaptcha-explanation">Выберите&nbsp;<span class="active">«наушники»</span>, чтобы подтвердить, что&nbsp;Вы не&nbsp;робот</div>
+										</div>
+									.reviews-form__other--right
+										.reviews-form__format
+											p
+												| Форматы и максимальный вес:
+											ul
+												li
+													| JPG
+												li
+													| PNG
+												li
+													| GIF
+												li
+													| 2 MB
+										.reviews-form__download
+											.error-txt(style="display:none")
+												| Фотография ещё не загружена
+											<span class="check">Фотография загружена</span>
+											input(type="file" id="file" name="file" accept="image/gif, image/jpeg, image/png")
+											label(for="file" data-text="загрузить другую фотографию").link Загрузить фотографию
+										.reviews-form__submit
+											button(type="submit").submit
+												| Отправить
+		include pug/pages/footer

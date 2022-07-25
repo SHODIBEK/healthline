@@ -1,0 +1,108 @@
+extends pug/base
+
+append vars
+	- title = 'Шприцы инъекционные стерильные однократного применения c иглами'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							a(href=`javascript:void(0);`)
+								| Для инфузионной терапии
+						li
+							| Шприцы инъекционные стерильные однократного применения c иглами
+					.crumbs-title
+						| Шприц инъекционный стерильный однократного применения с иглой для инсулина
+				.inner-content
+					.sidebar
+						ul
+							li.active
+								a(href="javascript:void(0);")
+									| для Инфузионной терапии
+							li
+								a(href="javascript:void(0);")
+									| для Общей  терапии
+							li
+								a(href="javascript:void(0);")
+									| для Анестезиологии и интенсивной терапии
+							li
+								a(href="javascript:void(0);")
+									| для АкушерствА и гинекологии
+							li
+								a(href="javascript:void(0);")
+									| для Урологии
+							li
+								a(href="javascript:void(0);")
+									| для Хирургии
+							li
+								a(href="javascript:void(0);")
+									| для Гастроэнтерологии
+					.main-page
+						.catalog-cart
+							.catalog-cart__top
+								.catalog-cart__img.owl-carousel
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+								.catalog-cart__name
+									span
+										| Область приминения:
+									p
+										| Инфузионная терапия
+							.catalog-cart__info
+								.catalog-cart__title
+									h3
+										| Модельный ряд:
+								.catalog-cart__table
+									dl.product-spec
+										dt.product-spec__name
+											| U-100 1 ml/cc, 29Gx1/2
+										dd.product-spec__value
+											| В наличии
+									dl.product-spec
+										dt.product-spec__name
+											| U-100 1 ml/cc, 29Gx1/2
+										dd.product-spec__value
+											| Под заказ
+									dl.product-spec
+										dt.product-spec__name
+											| U-100 1 ml/cc, 29Gx1/2
+										dd.product-spec__value
+											| Под заказ
+									dl.product-spec
+										dt.product-spec__name
+											| U-100 1 ml/cc, 29Gx1/2
+										dd.product-spec__value
+											| В наличии
+									dl.product-spec
+										dt.product-spec__name
+											| Пример оформления описания в несколько строк. Пример оформления описания в несколько строк.
+										dd.product-spec__value
+											| В наличии
+								.catalog-cart__title
+									h3
+										| Информация об изделии:
+									p
+										| Распишите о разделах сайта, укажите, где и что находиться, что можно найти в фотогалерее, каталоге продукции. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал. Создайте лаконичное и интересное описание Вашей компании, полностью раскрывающее вид деятельности, достижения и плюсы.
+								.link
+									a(href="javascript:void(0);").back-btn
+										+svg("enter")
+										span Назад
+
+		include pug/pages/footer

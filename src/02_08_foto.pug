@@ -1,0 +1,123 @@
+extends pug/base
+
+append vars
+	- title = 'Фотогалерея'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Фотогалерея
+					.crumbs-title
+						| Фотогалерея
+				.inner-content
+					.sidebar
+						ul
+							li
+								a(href="javascript:void(0);")
+									| Философия компании
+							li
+								a(href="javascript:void(0);")
+									| История компании
+							li
+								a(href="javascript:void(0);")
+									| Новости компании
+							li
+								a(href="javascript:void(0);")
+									| Обращение руководителя
+							li
+								a(href="javascript:void(0);")
+									| Сертификаты и награды
+							li.active
+								a(href="javascript:void(0);")
+									| Фотогалерея
+							li
+								a(href="javascript:void(0);")
+									| Видеоблог
+					.main-page
+						.gallery-block
+							.gallery-block__title
+								h1
+									| Название категории фотогалереи
+							ul.gallery-block__items
+								li
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+								li
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+								li
+									a(href="images/content/1.jpg" data-fancybox="gallery")
+										img(src="images/content/1.jpg")
+							.gallery-block__link
+								a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span Перейти к данной фотогалерии
+						.gallery-block
+							.gallery-block__title
+								h1
+									| Название категории фотогалереи
+							ul.gallery-block__items
+								li
+									a(href="images/content/2.jpg" data-fancybox="gallery2")
+										img(src="images/content/2.jpg")
+								li
+									a(href="images/content/2.jpg" data-fancybox="gallery2")
+										img(src="images/content/2.jpg")
+								li
+									a(href="images/content/2.jpg" data-fancybox="gallery2")
+										img(src="images/content/2.jpg")
+							.gallery-block__link
+								a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span Перейти к данной фотогалерии
+						.gallery-block
+							.gallery-block__title
+								h1
+									| Название категории фотогалереи
+							ul.gallery-block__items
+								li
+									a(href="images/content/3.jpg" data-fancybox="gallery3")
+										img(src="images/content/3.jpg")
+								li
+									a(href="images/content/3.jpg" data-fancybox="gallery3")
+										img(src="images/content/3.jpg")
+								li
+									a(href="images/content/3.jpg" data-fancybox="gallery3")
+										img(src="images/content/3.jpg")
+							.gallery-block__link
+								a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span Перейти к данной фотогалерии
+						.gallery-block
+							.gallery-block__title
+								h1
+									| Название категории фотогалереи
+							ul.gallery-block__items
+								li
+									a(href="images/content/4.jpg" data-fancybox="gallery4")
+										img(src="images/content/4.jpg")
+								li
+									a(href="images/content/4.jpg" data-fancybox="gallery4")
+										img(src="images/content/4.jpg")
+								li
+									a(href="images/content/4.jpg" data-fancybox="gallery4")
+										img(src="images/content/4.jpg")
+							.gallery-block__link
+								a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span Перейти к данной фотогалерии
+		include pug/pages/footer

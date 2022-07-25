@@ -1,0 +1,101 @@
+extends pug/base
+
+append vars
+	- title = 'Пример оформления анонса'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							a(href=`javascript:void(0);`)
+								| Новости компании
+						li
+							| Пример оформления анонса
+					.crumbs-title
+						| Пример оформления анонса
+				.inner-content
+					.sidebar
+						ul
+							li
+								a(href="javascript:void(0);")
+									| Философия компании
+							li
+								a(href="javascript:void(0);")
+									| История компании
+							li.active
+								a(href="javascript:void(0);")
+									| Новости компании
+							li
+								a(href="javascript:void(0);")
+									| Обращение руководителя
+							li
+								a(href="javascript:void(0);")
+									| Сертификаты и награды
+							li
+								a(href="javascript:void(0);")
+									| Фотогалерея
+							li
+								a(href="javascript:void(0);")
+									| Видеоблог
+					.main-page.news.news-inner
+						.news-cart
+							figure
+								a(href="images/content/3.jpg" data-fancybox="images").news-cart__img
+									img(src="images/content/3.jpg")
+								a(href="images/content/4.jpg" data-fancybox="images").news-cart__img
+									img(src="images/content/4.jpg")
+							span.date
+								| 21.05.2018
+							p
+								| Эта страница является новостным блогом и должна быть наполнена интересным контентом. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, или интересные статьи из сферы вашей деятельности. Подготовьте или переведите интересный документ или электронную книгу, разместите небольшой фрагмент на вашем блоге и предоставьте пользователям возможность скачать полную версию.
+							p
+								| Есть много способов распространять контент в интернете: сообщения в блогах, посты в Twitter, записи на «стене» в Facebook и других социальных сетях. Но чтобы коммуникация была эффективной, ваши идеи должны быть яркими и креативными, а контент - актуальным, интересным, информативным. Иначе он утрачивает свою привлекательность для читателя. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.
+						.news-cart__btn
+							a(href="javascript:void(0);").back-btn
+									+svg("enter")
+									span
+										| Назад
+						.news-other
+							.news-other__text
+								h1
+									| Другие новости:
+							ul
+								li
+									a(href="javascript:void(0);")
+										.news-other__img
+											img(src="images/content/3.jpg")
+										.news-other__title
+											span
+												| Пример оформления анонса
+										.news-other__date
+											span.date
+												| 21.05.2018
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.news-other__img
+											img(src="images/content/4.jpg")
+										.news-other__title
+											span
+												| Пример оформления анонса пример в две строки
+										.news-other__date
+											span.date
+												| 21.05.2018
+										.btn
+											| Прочитать
+
+		include pug/pages/footer

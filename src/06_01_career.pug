@@ -1,0 +1,185 @@
+extends pug/base
+
+append vars
+	- title = 'Карьера'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1'
+	- link.icon = 'favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#005931'
+	- defaultLink = 'javascript:void(0);'
+	- body.classList = ['inner-page'];
+block content
+	.wrapper
+		include pug/pages/header
+		section.page
+			.container
+				.crumbs
+					ul
+						li
+							a(href=`javascript:void(0);`)
+								| Главная
+						li
+							| Карьера
+					.crumbs-title
+						| Карьера
+				.inner-content
+					.career
+						.default-page
+							p
+								| Эта страница является новостным блогом и должна быть наполнена интересным контентом. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, или интересные статьи из сферы вашей деятельности. Подготовьте или переведите интересный документ или электронную книгу, разместите небольшой фрагмент на вашем блоге и предоставьте пользователям возможность скачать полную версию.
+						.career-title
+							h3
+								| Вакансии:
+						form(action="#" method="#").career-filter
+							span.career-filter__txt
+								| Вакансии по отделам:
+							.filter
+								select
+									option(value="Все вакансии" selected disabled)
+										|  Все вакансии
+									option(value="Название отдела №1")
+										| Название отдела №1
+									option(value="Название отдела №1")
+										| Название отдела №1
+									option(value="Название отдела №1")
+										| Название отдела №1
+									option(value="Название отдела №1")
+										| Название отдела №1
+									option(value="Название отдела №1")
+										| Название отдела №1
+									option(value="Название отдела №1")
+										| Название отдела №1
+						.career-list
+							ul
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии в две и более строк
+										.career-list__name
+											span
+												| Административный отдел
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Обслуживающий персонал
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Отдел кадров
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии в две и более строк
+										.career-list__name
+											span
+												| Административный отдел
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Обслуживающий персонал
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Отдел кадров
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии в две и более строк
+										.career-list__name
+											span
+												| Административный отдел
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Обслуживающий персонал
+										.btn
+											| Прочитать
+								li
+									a(href="javascript:void(0);")
+										.career-list__img
+											img(src="images/content/3.jpg")
+										.career-list__title
+											span
+												| Пример оформления названия вакансии
+										.career-list__name
+											span
+												| Отдел кадров
+										.btn
+											| Прочитать
+						ul.pagination
+							li
+								a(href="javascript:void(0);")
+									| Предыдущая
+							li
+								a(href="javascript:void(0);")
+									| 1
+							li.active
+								a(href="javascript:void(0);")
+									| 2
+							li
+								a(href="javascript:void(0);")
+									| 3
+							li.dots
+								a(href="javascript:void(0);")
+									| ....
+							li
+								a(href="javascript:void(0);")
+									| 10
+							li
+								a(href="javascript:void(0);")
+									| Следующая
+		include pug/pages/footer
